@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Views.MainActivity"
+    android:background="@color/lightGrey">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/red"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/uiHomesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/uiSearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/type_address"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/uiSearchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Search"
+            android:text="@string/search" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/uiHomesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uiEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/uiIdentifierTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/IdentifierTextBox"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/uiHomeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/locationHint"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/uiAddressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AddressTextBox"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/uiAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/type_address"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/uiAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAddData"
+            android:text="@string/add_home" />
+    </LinearLayout>
+
+</LinearLayout>

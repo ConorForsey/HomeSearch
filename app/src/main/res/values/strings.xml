@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Home Search</string>
+    <string name="add_home">Add Home</string>
+    <string name="home">Home</string>
+    <string name="map">Map</string>
+    <string name="search">Search</string>
+    <string name="edit">Edit</string>
+    <string name="list">List</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="google_maps_key">AIzaSyDQSgzGJM-U5T_IAmYKdg1sz1O-piYUlew</string>
+    <string name="type_address">Address</string>
+    <string name="locationHint">Location Name</string>
+    <string name="IdentifierTextBox">Input a Unique Location ID</string>
+    <string name="AddressTextBox">Input a Location Address</string>
+
+</resources>
